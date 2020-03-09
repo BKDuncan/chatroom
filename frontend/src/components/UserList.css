@@ -1,0 +1,7 @@
+.user-list {
+    background: #03353e;
+    padding: 1rem;
+    height: 75vh;
+    flex-shrink: 1;
+    min-width: 15%;
+}

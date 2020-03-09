@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron&display=swap');
+
+html, #root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background: #a79c93;
+  color: #c7bab0;
+  height: 100%;
+  font-family: 'Orbitron', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h2 {
+  color: #c1403d;
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.app {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-container {
+  padding: 2rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.title-header {
+  margin-top: 3rem;
+  background: #;
+}
+
+.title-label {
+  padding-left: 3rem;
+  margin-bottom: 0;
+}
+
+.connection-label {
+  padding-left: 4rem;
+}
+
+.connection-status {
+  color: #131313;
+}

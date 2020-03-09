@@ -1,0 +1,72 @@
+.chat-log {
+    background: #03353e;
+    padding: 1rem;
+    height: 75vh;
+    flex-grow: 1;
+    min-width: 50%;
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.chat-input {
+    display: flex;
+    width: 98%;
+    height: 2rem;
+    margin: 0.25rem;
+    background: #54565f;
+    color: #c1403d;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    position: relative;
+    bottom: 0;
+    padding-left: 1rem;
+}
+
+.fixed-log-container {
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.log-scroll {
+    height: calc(100% - 40px - 58px);
+    overflow-y: auto;
+    flex-direction: column;
+    display: flex;
+}
+
+.log-scroll > :first-child {
+    margin-top: auto;
+}
+
+.msg-container {
+    flex-wrap: nowrap;
+    padding: 0 0 0 2rem;
+    text-indent: -1rem;
+}
+
+.msg-time {
+    display: inline-block;
+    min-width: 5rem;
+    max-width: 5rem;
+    margin: 0 0 0 0.5rem;
+}
+
+.msg-username {
+    display: inline-block;
+    min-width: 5rem;
+    padding: 0 0.5rem 0 0.75rem;
+}
+
+.msg-text {
+    word-break: break-all;
+}
+
+.bold {
+    color: #c1403d;
+}
+.scroll-end {
+    padding-top: 1rem;
+}
