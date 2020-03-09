@@ -49,7 +49,7 @@ function App() {
           name: state.identity,
           color: state.users.find(u => u.name === state.identity).color
         }
-        cookies.set('user', cookie, { path: '/' });
+        cookies.set('user', cookie, { path: '/', maxAge: 31536000 });
       });
 
       socket.on(EVENT.ADD_USER, user => {
@@ -95,14 +95,14 @@ function App() {
 
         let { users, messages, identity } = chatState;
 
-        if (username === identity && newName !== username) {
+        if (username === identity) {
           // update cookie & identity
           identity = newName;
           const cookie = {
             name: identity,
             color: color
           };
-          cookies.set('user', cookie, { path: '/' });
+          cookies.set('user', cookie, { path: '/', maxAge: 31536000 });
         }
 
         // Perform updates
