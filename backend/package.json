@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon node app.js"
+    "start": "node --experimental-modules app.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +16,7 @@
     "socket.io": "^2.3.0"
   },
   "engines": {
-    "node": "13.7.0",
+    "node": "12.x.x",
     "npm": "6.13.6"
   }
 }
